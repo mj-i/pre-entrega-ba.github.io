@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" alt=" icono descargado de https://icons8.com/icon/88rReG8q5Os9/harry-potter" href="assets/img/icons8-harry-potter-64.png">
+    <link rel="stylesheet" href="style.css" />
+    <title>Harry Potter 101</title>
+  </head>
+  <body>
+    <header>
+      <!-- no entiendo la diferencia entre nav y ul para aplicarle el css -->
+      <nav>
+        <ul class="menu">
+          <!-- me falta hacer el logo, pasa que se lo quise agregar a lo ultimo porque
+           no tenia pensado poner uno y se me desarma todo el menu  -->
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="libros.html">Libros</a></li>
+          <li><a href="peliculas.html">Pelis</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- no entiendo  si el diplay flex se lo tengo que dar al section que seria el padrem o al contenedor 1 que seria hijo1 -->
+      <section class="home-padre" id="ancla-personajes">
+        <div class="home-hijo1">
+            <h1>
+              <img src="assets/img/bv-gpt.png" alt="" class="img-bienvenidos">
+            </h1>
+            <a href="#rayo-ancla"><img src="assets/img/rayo-hp-gpt.png" alt="icono de un rayo trueno" width="52px" height="52px"></a>
+        </div>
+        <div class="contenedor-extra-home">
+          <div class="home-hijo2">
+            <h2 id="rayo-ancla">¡Hola!</h2>
+            <p> El objetivo de esta página es brindarte información básica sobre la saga Harry Potter. Vas a poder encontrar info sobre los libros, las peliculas,
+              los personajes y el mundo mágico. Mi nombre es María José y este es el trabajo realizado durante el curso FrontEnd JS con el objetivo
+              de presentar esta web como Proyecto Final del curso. Espero que les guste y me encantaria recibir feedback, recomendaciones e ideas para sumar a la web.
+              Podes dejar tu sugerencia a través del formulario. ¡Muchas gracias!
+            </p>  
+          </div>
+          
+          <div class="home-hijo3">
+            <h2 >Historia</h2>
+            <p>Harry Potter es una saga de fantasía creada por la escritora
+              británica J.K. Rowling. La historia sigue las aventuras de un niño
+              huérfano que, al cumplir 11 años, descubre que es un mago. Es
+              entonces cuando es invitado a asistir a Hogwarts, una escuela de
+              magia y hechizeria. <br> A lo largo de siete libros (y ocho
+              películas), Harry y sus amigos Hermione Granger y Ron Weasley
+              vivirán increíbles aventuras, lucharán contra el malvado mago Lord
+              Voldemort y aprenderán el valor de la amistad, el coraje y el amor.
+              La historia está llena de criaturas mágicas, casas misteriosas,
+              objetos encantados y lugares inolvidables. Es un universo que atrapó a
+              millones de personas en todo el mundo, tanto chicos como grandes.
+              Incluso si nunca leíste los libros ni viste las películas, esta web
+              te va a dar un vistazo a esta historia tan especial. </p>
+          </div>
+        
+        </div>
+        
+        <h2 class="titulo-sector">Personajes principales</h2>
+        <div class="contenedor-extra-personajes">
+            <div class="home-hijo4 personajes-div" >
+                  <div class="personaje-img">
+                    <img src="assets/img/hp-personaje.jpg" alt="foto de harry " width="150px">
+                  </div>
+                  <div class="personaje-descripcion">
+                      <h3>Harry Potter</h3>
+                      <p>Harry Potter es el protagonista de la historia, un niño huérfano con una cicatriz en forma de rayo que descubre que es mago. Es valiente, leal y muchas veces actúa por instinto. Fue elegido para asistir al colegio Hogwarts, donde se convierte en el enemigo principal del mago oscuro Lord Voldemort. </p>     
+                  </div>                                         
+            </div>
+            <div class="linea-divisoria"></div>
+
+            <div class="home-hijo5 personajes-div" >
+                  <div class="personaje-img">
+                    <img src="assets/img/Hermione-personaje.jpg" alt="foto de hermione" width="150px">
+                  </div>
+                  <div class="personaje-descripcion">
+                      <h3>Hermione Granger</h3>
+                      <p>Hermione Granger es la mejor amiga de Harry, muy inteligente y dedicada a los estudios. Hija de padres muggles (no mágicos), demuestra que el origen no determina la capacidad. Siempre está preparada, ama los libros y es fundamental en la resolución de muchos problemas. </p>     
+                  </div>                                         
+            </div>
+            <div class="linea-divisoria"></div>
+
+            <div class="home-hijo5 personajes-div" >
+                  <div class="personaje-img">
+                    <img src="assets/img/ron-personaje.jpg" alt="foto de ron " width="150px">
+                  </div>
+                  <div class="personaje-descripcion">
+                      <h3>Ron Weasley</h3>
+                      <p>Ron Weasley es el otro mejor amigo de Harry, proveniente de una familia mágica numerosa y humilde. Es divertido, leal y aunque a veces inseguro, siempre está dispuesto a apoyar a sus amigos. Su relación con Harry y Hermione es clave en la historia. </p>     
+                  </div>                                         
+            </div>
+            <div class="linea-divisoria"></div>
+
+            <div class="home-hijo6 personajes-div" >
+                  <div class="personaje-img">
+                    <img src="assets/img/Dumbledore-personaje.jpg" alt="foto de Dumbledore " width="150px">
+                  </div>
+                  <div class="personaje-descripcion">
+                      <h3>Albus Dumbledore</h3>
+                      <p>Albus Dumbledore es el director de Hogwarts, uno de los magos más poderosos y sabios del mundo mágico. Actúa como mentor de Harry, guiándolo con consejos y protegiéndolo, aunque a veces guarda secretos por el bien mayor.</p>     
+                  </div>                                         
+            </div>
+            <div class="linea-divisoria"></div>
+
+            <div class="home-hijo7 personajes-div" >
+                  <div class="personaje-img">
+                    <img src="assets/img/snape-personaje.jpg" alt="foto de Snape " width="150px">
+                  </div>
+                  <div class="personaje-descripcion">
+                      <h3>Severus Snape</h3>
+                      <p>Severus Snape es el profesor de Pociones, conocido por su carácter frío y severo. Aunque parece odiar a Harry, su historia es compleja y llena de matices. Su lealtad y valentía se revelan completamente al final de la saga.</p>     
+                  </div>                                         
+            </div>
+            <div class="linea-divisoria"></div>
+
+            <div class="home-hijo8 personajes-div" >
+                  <div class="personaje-img">
+                    <img src="assets/img/voldi-personaje.jpg" alt="foto de Voldemort " width="150px">
+                  </div>
+                  <div class="personaje-descripcion">
+                      <h3>Voldemort</h3>
+                      <p>Lord Voldemort (Tom Riddle) es el villano principal, un mago tenebroso que busca la inmortalidad y el control total del mundo mágico. Carece de empatía, teme a la muerte y ve a Harry como su único obstáculo real.</p>     
+                  </div>                                         
+            </div>
+            <div class="linea-divisoria"></div>
+           
+            <!-- seccion de personajes secundarios, todavia no pude hacerla. Quisiera que sea desplegable
+             y se pueda abrir y cerra las secciones de personajes porque sino queda muy largo -->
+            <!-- <div class="home-hijo9 personajes-div" >
+                  <div class="personaje-img">
+                    <img src="assets/img/malfoy-personaje.jpg" alt="foto de draco malfoy " width="150px">
+                  </div>
+                  <div class="personaje-descripcion">
+                      <h3>Draco Malfoy </h3>
+                      <p>Draco Malfoy es compañero de clase de Harry y su rival en Hogwarts. Viene de una familia de sangre pura y actúa muchas veces con arrogancia, pero en el fondo es un personaje inseguro atrapado por las expectativas de su familia.</p>     
+                  </div>                                         
+            </div>
+            <div class="linea-divisoria"></div> -->
+            
+        </div>
+      
+        <h3 class="titulo-sector">Hedwig entregará tu carta</h3>
+        <div class="formulario-de-contacto">
+          <form  class="formulario" action="https://formspree.io/f/mvgaekrj" method="POST" >
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">¡Dejá tu mensaje! </label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+            <button type="submit">Enviar carta</button>
+          </form>
+        </div>
+            
+        <div class="boton-subir">
+                <a href="#ancla-personajes" ><img src="assets/img/trueno.png" alt="imagen de rayito" height="35px"  ></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="pie-cont">
+        <p>2025 - BA Aprende</p>
+      </div>
+    </footer>
+  </body>
+</html>

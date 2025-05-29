@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'rfp';  /* Nombre que usarás en CSS */
+    src: url('assets/fonts/RomanceFatalPrima-RAZV.ttf') format('truetype'); /* Ruta al archivo TTF */
+    font-weight: 400; /* Peso de la fuente */
+    font-style: normal; /* Estilo de la fuente */
+  }
+
+
+/* el diseño base es para celular */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-image: url(assets/img/fondo-papel.jpg);
+    padding: 20px;
+}
+
+
+.menu a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: "MedievalSharp", cursive; 
+    font-weight: 500;
+    color: #262626;
+    font-size: larger;
+}
+
+.home-hijo1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    background-image: url(assets/img/fono-home-gpt.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    font-family: "MedievalSharp", cursive;  
+    font-size:medium;
+    
+}
+ .img-bienvenidos{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.home-hijo2 {
+    background-image: url(assets/img/fondo-colores-casas-gpt.png);
+    background-size: cover;
+    text-align:center;
+    padding: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home-hijo2 h2 {
+    font-family:'rfp';
+    padding: 10px;
+    font-size: 30px;
+    color: #b6b4a1;
+}
+
+.home-hijo2 p {
+    background-color: #000000e9;
+     color: #c3c3bd;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.home-hijo3{
+    background-image: url(assets/img/fondo-papel.jpg);
+    text-align:left;
+    padding: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.home-hijo3 h2 {
+    font-family: 'rfp';
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.titulo-sector{
+    font-family: 'rfp';
+    font-size: 30px;
+    text-align: center;
+    padding: 1em;
+    background-image: url(assets/img/fondo-colores-diag-gpt.png);
+    background-size: cover;
+    background-position: left;
+    color: #b6b4a1;
+}
+
+.formulario-de-contacto{
+    background-image: url(assets/img/contacto.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #c1ba8e;
+    padding-top: 30%;
+    padding-bottom: 10%;
+    font-family: 'rfp'; 
+    /* estoy enloqueciendo porque no me sale darle forma el formulario
+    send help */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 90vh;
+}
+
+
+.formulario {
+    color: #000000f3;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.formulario label{
+    display: block;
+    font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.formulario input {
+    margin-top: 0.5rem;
+    background-color: #0e0e0e00;
+    border: none;
+    border-bottom: 1px solid;
+}
+.formulario textarea {
+    background-color: #0000001a;
+    width: 100%;
+}
+
+.formulario button {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  background-color: #4e1616;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: "MedievalSharp", cursive;  
+  font-size: 20px;
+}
+
+.pie-cont {
+    display: flex;
+    justify-content: center;
+     background-image: url(assets/img/mapa-mero.jpg);
+    background-size: cover;
+    height: 80px;
+    align-items: center;
+}
+.pie-cont p {
+    font-family: 'rfp';
+    font-size: 1.5pc;
+    font-weight: bold;
+    color: #000000;
+    padding: 20px;
+    margin: 15px;
+}
+
+.boton-subir {
+  padding: 10PX;
+    display: flex;
+    justify-content: right;
+    background-color: #c1ba8e;
+}
+
+.boton-subir a {
+      color: #000000;
+    text-decoration: none;
+    font-family: "MedievalSharp", cursive;  
+}
+
+/* --------------------
+CSS DE LA PAGINA LIBROS MOBILE Y LA DE LOS PERSONAJES MOBILE
+-------------------*/
+.libros-hijo1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    background-image: url(assets/img/fondo-libros-hp-gpt.png);
+    background-size:cover;
+    justify-content: center;
+    color: #fff;
+    font-family: "MedievalSharp", cursive;  
+    font-size:medium
+}
+
+.img-libros-dorado{
+    width: 40%;
+    margin: 0 auto;;
+}
+
+
+
+.libro-img .personaje-img{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* .libros-padre{
+    background-image: url(assets/img/fondo-papel.jpg);
+    mejor poner la iamgen de fondo a cada div de libro asi no se deforma
+} */
+
+.libros-div , .personajes-div{
+    /* libros-div es la clase que van a tener todos los div que contengan un libro, dentro de cada uno hay un contenedor 
+    de imagen y otro de sinopsis. Este me va a servir para darle el mismo estilo a el div que tenga cada libro */
+    background-image: url(assets/img/fondo-papel.jpg);
+    padding: 20px;
+    /* font-family: "Dosis"; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size:medium;
+}
+
+/* aca voy a sobreescribir la imagen de fondo de la seccion personajes
+asi uso el codigo de arriba para lo otro que quiero igual, solo quiero cambiar la foto de fondo, no se si se puede */
+.personajes-div{
+    background-image: url(assets/img/fondo-personajes-limpio-gpt.png);
+    background-size: cover;
+    color: #b6b4a1;
+    
+}
+
+.personaje-img img {
+    border-radius: 20%;
+}
+
+.libros-div h3, .personajes-div h3{
+    font-family: "rfp";
+    font-size: xX-large;
+    margin: 5%;
+    text-align: center;
+}
+.linea-divisoria{
+    height: 2px;
+    /* background-image: url(assets/img/fondo-oro-gpt.png);
+    background-size: cover; */
+    background-color: rgb(25, 25, 24);
+}
+
+/* esto es si le quiero poner un rectangulo redondeado transparente al parrafo */
+.libros-div p , .personajes-div p{
+    background-color: rgba(21, 20, 21, 0.6);
+    padding: 30px;
+    margin: 2PX;
+    color: #d1cece;
+    border-radius: 10px;
+}
+
+
+
+/* ------------------
+CSS DE LA PAGINA PELIS 
+--------------------*/
+.pelis-hijo1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    background-image: url(assets/img/fondo-pelis-hp.png);
+    background-size: cover;
+    justify-content: center;
+    color: #fff;
+    font-family: "MedievalSharp", cursive;  
+    font-size:medium
+}
+
+
+
+
+
+/* ---------------------------- */
+/* esto seria para escritorio */
+
+@media (min-width: 1025px) {
+
+   
+  
+    .menu {
+        background-image: url(assets/img/fondo-papel.jpg);
+        background-size: 50vw;
+        
+    }
+
+    .menu a {
+        color: #262626;
+    }
+    .menu li:hover{
+        transform: scale(1.3);
+    }
+    
+    .menu a:hover{
+         color: #dde725;
+    }
+
+    .pie-cont {
+        background-size: contain ;
+    }
+    .pie-cont p {
+        padding: 10px ;
+        background-color: #00000088;
+        color: #c4c3c1;
+    }
+
+    /*seccion home  escritrio */
+    .home-hijo1 h1 {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    /* .contenedor-extra-home{
+        display: flex;
+    } */
+
+    .home-hijo2{
+        background-image: url(assets/img/fondo-colores-diag-gpt.png);
+        background-size: cover;
+        background-position: left;
+    }
+
+    .home-hijo3{
+        background-size: 50vw;
+    }
+
+    .home-hijo3 h2{
+        font-size: 50px;
+        color: #000000;
+    }
+
+    .home-hijo3 p {
+        padding: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        font-size: 25px;
+    }
+
+ 
+
+    /* SECCION libros y personajes escritorio*/
+    .libros-hijo1{
+    background-size: cover;
+    background-position: bottom;
+    }
+
+    .libros-hijo1 h1{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* el contnedor prueba lo agregue ahora porque no podia aplicar bien el display flex sino */
+    .contenedor-prueba, .contenedor-extra-personajes{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        background-image: url(assets/img/fondo-iconos-gpt.png);
+    }
+    .contenedor-extra-personajes{
+        background-color: #0b0b0b;
+    }
+    .libros-div {
+        flex-direction: row;
+        background-image: none;
+        width: 27%;
+        color: #c1ba8e;
+    }
+
+    .personajes-div:hover {
+        transform: scale(1.1);
+        padding: 50px;
+        border-radius: 10px;
+        background-image: url(assets/img/fondo-negro-gpt.png);
+        color: #ffffff;
+    }
+
+    .personajes-div {
+        width: 27%;
+    }
+    .libros-div:hover{
+        transform: scale(1.1);
+        padding: 50px;
+        color: #000000;
+        border-radius: 10px;
+        background-image: url(assets/img/fondo-papel.jpg);
+    }
+
+    .libro-sinopsis p:hover , .personaje-descripcion p:hover{
+        background-color: #000000;
+    }
+    .libro-img img:active , .personaje-img img:active{
+        width: 90%;
+    }
+
+    .titulo-sector {
+        font-size: 3rem;
+        padding: 2rem;
+    }
+
+   
+
+    /* escritotrio sector contacto */
+    .formulario-de-contacto{
+    background-image: url(assets/img/contacto.png);
+    background-size: 30rem;
+    background-color: #c1ba8e;
+    background-position: 25%;
+    font-family: 'rfp'; 
+    /* estoy enloqueciendo porque no me sale darle forma el formulario
+    send help */
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    /* ya no me da mas el cerebro, lo dejo asi porque funciona
+    pero si le baje de 25vh me sobra espacio de abajo
+    y no entiendo por qué */
+}
+    .formulario {
+        padding-right: 20%;
+        padding-bottom: 25%;
+    }
+    
+  }
+
+
+
+  
+/* PARA TABLETS */
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    /* index */
+
+    .home-hijo1 h1{
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    
+    .home-hijo2{
+        background-color: #006466;
+        background-image: none;
+    }
+
+
+/* seccion libros */
+  .libros-hijo1{
+    background-size: cover;
+    background-position: bottom;
+}
+
+    .libros-hijo1 h1{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* el contnedor prueba lo agregue ahora porque no podia aplicar bien el display flex sino */
+    .contenedor-prueba{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        background: linear-gradient(#006466, #271045);
+        
+    }
+    .libros-div{
+        flex-direction: row;
+        background-image: none;
+        width: 80%;
+       color: #c1ba8e;
+       padding-top: 20px;
+       
+    }
+
+    .libros-div p{
+    width: 100%;
+    background-color: #1B3A4B;
+    padding: 20px;
+    margin: 2px;
+    color: #d1cece;
+    border-radius: 10px;
+}
+
+    
+}
+
+/* 
+  para tablet horizontal
+*/
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .home-hijo2{
+        background-image: none;
+        background: linear-gradient(to bottom right, #272640 , #271045);
+    }
+  
+  .libros-hijo1{
+    background-size: cover;
+    background-position: bottom;
+}
+
+    .libros-hijo1 h1{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* el contnedor prueba lo agregue ahora porque no podia aplicar bien el display flex sino */
+    .contenedor-prueba{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        background-color: #271045;
+        
+    }
+    .libros-div{
+        flex-direction: row;
+        background-image: none;
+        width: 40%;
+       color: #c1ba8e;
+
+       /* DUDA: No entiendo por qué no se aplica este padding, lo 
+       necesito para separar los libros, tampoco se aplica cuando quiero 
+       usar la clase linea-divisoria*/
+       padding-top: 20%;
+    }
+
+    .libros-div p{
+    width: 90%;
+    background-color: #272640;
+    padding: 20px;
+    margin: 2px;
+    color: #d1cece;
+    border-radius: 10px;
+}
+  
+}
