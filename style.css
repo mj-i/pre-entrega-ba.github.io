@@ -52,6 +52,7 @@
 .home-hijo2 {
     background-image: url(assets/img/fondo-colores-casas-gpt.png);
     background-size: cover;
+    background-position:center;
     text-align:center;
     padding: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
