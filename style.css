@@ -26,8 +26,8 @@
     padding: 10px 20px;
     font-family: "MedievalSharp", cursive; 
     font-weight: 500;
-    color: #262626;
-    font-size: larger;
+    color: #02010f;
+    font-size: 1.3rem;
 }
 
 .home-hijo1{
@@ -44,15 +44,15 @@
     
 }
  .img-bienvenidos{
-    width: 80%;
-    margin: 0 auto;
+    width: 70%;
+    margin-left: 3%;
 }
 
 
 .home-hijo2 {
-    background-image: url(assets/img/fondo-colores-casas-gpt.png);
+    background-image: url(assets/img/fondo-colores-diag-gpt.png);
     background-size: cover;
-    background-position:center;
+    background-position: center;
     text-align:center;
     padding: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -74,19 +74,30 @@
 }
 
 .home-hijo3{
-    background-image: url(assets/img/fondo-papel.jpg);
+    background-image: url(assets/img/ChatGPT\ Image\ 11\ jul\ 2025\,\ 02_58_34\ p.m..png);
+    background-size: cover ;
     text-align:left;
-    padding: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 50px;
+    font-family: "Literata", serif;
+  font-optical-sizing: auto;
     font-size: 16px;
+    font-weight: 500;
 }
 
 .home-hijo3 h2 {
     font-family: 'rfp';
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     padding: 10px;
 }
+
+.home-hijo3 p {
+    text-align: center;
+}
+.home-hijo3b {
+    display: none;
+}
+
 
 .titulo-sector{
     font-family: 'rfp';
@@ -170,18 +181,12 @@
 }
 
 .boton-subir {
-  padding: 10PX;
-    display: flex;
-    justify-content: right;
-    background-color: #c1ba8e;
+    position: fixed;
+    bottom: 20px;    /* A 20px del borde inferior */
+     right: 20px;
+     background: none;
+    z-index: 100;
 }
-
-.boton-subir a {
-      color: #000000;
-    text-decoration: none;
-    font-family: "MedievalSharp", cursive;  
-}
-
 /* --------------------
 CSS DE LA PAGINA LIBROS MOBILE Y LA DE LOS PERSONAJES MOBILE
 -------------------*/
@@ -199,7 +204,7 @@ CSS DE LA PAGINA LIBROS MOBILE Y LA DE LOS PERSONAJES MOBILE
 }
 
 .img-libros-dorado{
-    width: 40%;
+    width: 70%;
     margin: 0 auto;;
 }
 
@@ -216,7 +221,7 @@ CSS DE LA PAGINA LIBROS MOBILE Y LA DE LOS PERSONAJES MOBILE
     mejor poner la iamgen de fondo a cada div de libro asi no se deforma
 } */
 
-.libros-div , .personajes-div{
+.libros-div , .personajes-div, .pelis-div{
     /* libros-div es la clase que van a tener todos los div que contengan un libro, dentro de cada uno hay un contenedor 
     de imagen y otro de sinopsis. Este me va a servir para darle el mismo estilo a el div que tenga cada libro */
     background-image: url(assets/img/fondo-papel.jpg);
@@ -236,11 +241,18 @@ asi uso el codigo de arriba para lo otro que quiero igual, solo quiero cambiar l
     
 }
 
+.pelis-div{
+    background-image: url(assets/img/fono-home-gpt.png);
+    background-size: cover;
+    color: #b6b4a1;
+    
+}
+
 .personaje-img img {
     border-radius: 20%;
 }
 
-.libros-div h3, .personajes-div h3{
+.libros-div h3, .personajes-div h3, .pelis-div h3{
     font-family: "rfp";
     font-size: xX-large;
     margin: 5%;
@@ -255,7 +267,7 @@ asi uso el codigo de arriba para lo otro que quiero igual, solo quiero cambiar l
 
 /* esto es si le quiero poner un rectangulo redondeado transparente al parrafo */
 .libros-div p , .personajes-div p{
-    background-color: rgba(21, 20, 21, 0.6);
+    background-color: rgba(0, 0, 0, 0.74);
     padding: 30px;
     margin: 2PX;
     color: #d1cece;
@@ -274,31 +286,61 @@ CSS DE LA PAGINA PELIS
     height: 100vh;
     background-image: url(assets/img/fondo-pelis-hp.png);
     background-size: cover;
+    background-position: top;
     justify-content: center;
     color: #fff;
     font-family: "MedievalSharp", cursive;  
     font-size:medium
 }
 
+/* esto es para que no se desborde del video en movil */
+.peli-trailer {
+      width: 100%; /* Ocupa todo el ancho del contenedor */
+      height: 0; /* Altura inicial en 0 */
+      padding-bottom: 56.25%; /* Relación de aspecto 16:9 (se puede ajustar según el video) */
+      position: relative; /* Para posicionar el iframe dentro */
+    }
 
+ .peli-trailer iframe {
+      position: absolute; /* Posicionamiento absoluto para llenar el contenedor */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
 
+    .img-pelis-dorado{
+        width: 70%;
+    }
+
+    .peli-sinopsis p {
+        padding: 6%;
+        background-color: #0000009d;
+        margin-bottom: 2%;
+        border-radius: 13px;
+    }
+    .peli-sinopsis h3 {
+        font-size: 2rem;
+    }
 
 
 /* ---------------------------- */
 /* esto seria para escritorio */
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
    
   
     .menu {
         background-image: url(assets/img/fondo-papel.jpg);
-        background-size: 50vw;
+        background-size: cover;
         
     }
 
     .menu a {
-        color: #262626;
+        color: #020522;
+        font-size: 1.4rem;
     }
     .menu li:hover{
         transform: scale(1.3);
@@ -318,14 +360,17 @@ CSS DE LA PAGINA PELIS
     }
 
     /*seccion home  escritrio */
-    .home-hijo1 h1 {
-        width: 30%;
+
+
+    .img-libros-dorado , .home-hijo1 h1 {
+        width: 40%;
         margin: 0 auto;
     }
 
-    /* .contenedor-extra-home{
-        display: flex;
-    } */
+    .img-pelis-dorado{
+        width: 30%;
+        margin: 0 auto;
+    }
 
     .home-hijo2{
         background-image: url(assets/img/fondo-colores-diag-gpt.png);
@@ -333,19 +378,41 @@ CSS DE LA PAGINA PELIS
         background-position: left;
     }
 
-    .home-hijo3{
+    .contenedor-extra-lib {
+        display: flex;
+        background-image: url(assets/img/fondo-papel.jpg);
         background-size: 50vw;
+        height: 100vh;
+    }
+
+    .home-hijo3{
+        width: 50%;
+        background: none;
     }
 
     .home-hijo3 h2{
-        font-size: 50px;
+        font-size: 3rem;
         color: #000000;
+        padding-top: 2.2rem;
     }
 
     .home-hijo3 p {
-        padding: 30px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-        font-size: 25px;
+    font-family: "Literata", serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2% 8%;
+    }
+    .home-hijo3b {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+    }
+
+    .home-hijo3b img{
+        border: 3px solid rgb(74, 75, 6);
     }
 
  
@@ -405,40 +472,52 @@ CSS DE LA PAGINA PELIS
     }
 
     .titulo-sector {
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding: 2rem;
     }
 
-   
+   .pelis-hijo1 {
+    background-image: url(assets/img/fondo-violeta-gpt.png);
+    background-size: cover;
+    background-position: right;
+   }
 
+   .libros-hijo1 {
+    background-size: cover;
+    background-position: right;
+   }
+   .peli-sinopsis p {
+    padding: 2%;
+   }
+
+   .peli-sinopsis h3 {
+    font-size: 3rem;
+   }
     /* escritotrio sector contacto */
     .formulario-de-contacto{
     background-image: url(assets/img/contacto.png);
-    background-size: 30rem;
     background-color: #c1ba8e;
     background-position: 25%;
     font-family: 'rfp'; 
-    /* estoy enloqueciendo porque no me sale darle forma el formulario
-    send help */
-    display: flex;
-    flex-direction: column;
-    height: 25vh;
-    /* ya no me da mas el cerebro, lo dejo asi porque funciona
-    pero si le baje de 25vh me sobra espacio de abajo
-    y no entiendo por qué */
+    height: 10vh;
+    padding-left: 30%;
 }
-    .formulario {
-        padding-right: 20%;
-        padding-bottom: 25%;
+    /* ESCRITORIO PELIS */
+    .pelis-div{
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5%;
     }
-    
+
+
   }
 
 
 
   
 /* PARA TABLETS */
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
   
     /* index */
 
@@ -498,8 +577,7 @@ CSS DE LA PAGINA PELIS
   para tablet horizontal
 */
 
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
 
     .home-hijo2{
         background-image: none;
@@ -546,3 +624,93 @@ CSS DE LA PAGINA PELIS
 }
   
 }
+
+
+/* ---------------------------- */
+
+/* estilo del formulario de validacion de js  */ 
+
+.my-form {
+  height: 60vh;
+  background-image: url(assets/img/fondo-iconos-gpt.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-family: 'rfp';
+  font-size: xx-large;
+    color: #c1ba8e;
+    font-weight: bolder;
+    padding-top: 20vh;
+}
+
+.my-form label{
+    display: block;
+    font-size: 2rem;
+    padding-top: 1rem;
+
+}
+
+.my-form input {
+    margin-top: 0.5rem;
+    background-color: #0e0e0e00;
+    border: none;
+    border-bottom: 1px solid;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "MedievalSharp", cursive; 
+    width: 40%;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.btn-enviar {
+  
+   width: 30%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  background-color: #97b9df;
+  color: rgb(14, 20, 48);
+  border: none;
+  border-radius: 8px;
+  font-family: "MedievalSharp", cursive;  
+  font-size: 20px;
+}
+
+.btn-enviar:hover {
+  padding: 16px;
+  color: #550b51;
+  background-color: #c18e9b;
+}
+
+.error {
+  color: red;
+  font-family: 'Roboto Flex', Verdana, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+
+
+
+.titulo-sector2 {
+     background-image: url(assets/img/fv-gpt.png);
+     font-family: 'rfp';
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 1em;
+   
+    background-size: cover;
+    background-position: left;
+    color: #b6b4a1;
+}
+
